@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clarusway Project - 004</title>
+  <title>Phonebook Project</title>
   <style>
     body {
       max-width: 600px;
@@ -22,6 +22,7 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
+      max-width:100%;
     }
 
     input {
@@ -36,8 +37,8 @@
 
     button {
       box-sizing: border-box;
-      background-color: #4caf50;
-      color: white;
+      background-color: #000000;
+      color: rgb(255, 255, 255);
       padding: 16px 20px;
       margin: 8px 0;
       border: none;
@@ -47,25 +48,29 @@
     }
 
     .warning {
-      color: red;
+      color: rgb(235, 3, 3);
     }
 
     .sectionnote{
-      color: rgba(190, 31, 164, 0.89);
+      color: rgba(255, 255, 255, 0.89);
     }
     .footnote{
-      color: rgba(0, 0, 255, 0.712);
+      color: rgba(255, 255, 255, 0.712);
     }
+    body {
+      background-image: url('./wallpaper.jpg');
+    }
+
 
   </style>
 </head>
 
 <body>
 
-  <div><img src="https://clarusway.com/wp-content/uploads/2020/06/clarusway_logo.png" /></div>
+  <div><img src="./bg.png" /></div>
 
   <h1>Project : Phonebook Application</h1>
-  <h2>Welcome to {{developer_name}}'s Phonebook Application</h2>
+  <h2>Welcome to ALI's Phonebook Application</h2>
   <h2 class="sectionnote">Enter a name to search</h2>
 
   <form action="#" method="post">
@@ -82,7 +87,7 @@
     {% endif %}
   </form>
 
-  <p class="footnote"><i>This app is developed in Python by <b>{{ developer_name }}</b> and deployed with Flask on AWS Cloud using Clouldformation Service.</i></p>
+  <p class="footnote"><i>This app is developed in Python by <b>ALI</b> and deployed with Flask on AWS Cloud using Clouldformation Service.</i></p>
 </body>
 
 </html>
